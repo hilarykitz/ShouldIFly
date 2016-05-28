@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Should I Fly</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Intro Section -->
+<main id="main1">
+  <div id="p1">
+  <div class="title-wrap col-xs-12">
+    <h1>
+        <span id="title1">Should I Fly?</span>
+        <span id="title2" class="hide-flip">Let's See...</span>
+        <span id="title3" class="hide-flip">Not Really!</span>
+    </h1>
+  </div>
+<div class="col-xs-12">
+<ul class='cities centered'>
+    <li><input type='text' id='input-from' class='big-blue' placeholder='From'/></li>
+    <li><input type='text' id='input-to' class='big-blue' placeholder='To'/></li>
+</ul>
+</div>
+<div class="col-xs-12">
+<button id="go-btn" class='darkblue-btn centered hide-below'>Tell Me</button>
+    <ul class='transport vertical centered'>
+        <li class='hide-below' data-cost='105' >
+            <span class='cost'></span>
+            <div class='bar' id='plane' data='30.18'></div>
+            <img src='img/plane-icon.svg'/>
+            <img class='load spin-back' src='img/spin-back.svg'/>
+            <img src='img/loader.svg' class='load spinner'/>
+        </li>
+        <li class='hide-below' data-cost='29'>
+            <span class='cost'></span>
+            <div class='bar' id='train' data='40.21'></div>
+            <img src='img/train-icon.svg'/>
+            <img class='load spin-back' src='img/spin-back.svg'/>
+            <img src='img/loader.svg' class='load spinner'/>
+        </li>
+        <li class='hide-below' data-cost='19'>
+            <span class='cost'></span>
+            <div class='bar' id='bus' data='70.15'></div>
+            <img src='img/bus-icon.svg'/>
+            <img class='load spin-back' src='img/spin-back.svg'/>
+            <img src='img/loader.svg' class='load spinner'/>
+        </li>
+    </ul>
+</div>
+  </div>
+</main>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

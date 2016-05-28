@@ -1,0 +1,257 @@
+/*!
+ * Start Bootstrap - Scrolling Nav HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family:'Open Sans','Helvetica', 'Arial', sans-serif;
+    font-size:80%;
+    overflow:auto;
+    background:#FFF;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+* {
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    font-weight:600;
+}
+
+main {
+    background-color:#2A84B7;
+    width:1200px; height:800px;max-width:100%;
+    position:absolute;top:0;left:0;right:0;bottom:0;margin:auto auto;}
+
+main > div {
+    position: relative;
+    padding: 100px 40px 40px 40px;
+    width: 100%;
+    height: 100%;
+}
+
+input, button {
+    border-radius:3px;
+    outline:none;
+    border:none;
+    color:#FFF;
+    padding:10px 20px;
+    font-size:20px;
+    font-weight:400;
+    text-align:center;
+    transition:all 0.2s ease-out;
+}
+
+button {text-transform:uppercase; font-weight:bolder;}
+
+h2,h3 {margin:0;line-height: 2em; font-weight:600;}
+h3.cost {
+    float: left;
+    width: auto;
+    text-align: right;
+}
+.centered {
+    float: none!important;
+    display: block!important;
+    left: 0;
+    right: 0;
+    margin-left: auto!important;margin-right: auto!important;
+    padding:0;
+}
+.left {float:left!important;}
+
+ul.cities {
+    width: 640px;
+    max-width: 100%;
+}
+
+ul.cities li {
+    display: inline;
+    margin: 20px 10px;
+    max-width: 50%;
+    min-width: 300px;
+    width: 300px;
+    opacity:1;margin-top:0;
+    float: left;
+    transition:all 1s ease-in;
+}
+
+ul.cities li input.big-blue {
+    background-color: #009FE3;
+    width: 100%;
+    min-height: 50px;
+    font-size:24px;
+}
+
+ul.cities li input.big-blue:focus, ul.cities li input.big-blue:hover {
+    min-height:60px;
+    margin-top:-5px;
+    box-shadow:0 0 4px rgba(0,0,0,0.2);
+}
+
+ul.vertical {
+    height:auto;
+    width:50px;
+    max-width:100%;
+   transition:0.75s ease-in-out;
+}
+.vertical li {
+    height:50px;
+    width:100%;
+    margin-bottom:20px;
+    display:block;
+    opacity:1;
+    background:transparent;
+    position:relative;
+    color:#009FE3;
+    font-weight:600;
+    text-indent: 0.4em;
+    transition:all 0.35s ease-in-out;
+}
+
+ul.vertical li .bar {
+    background-color:#009FE3;   
+    height: 50px;
+    position:relative;
+    float:left;
+    border-radius:5px;}
+
+span.cost {
+    left: -6.5rem;
+    position: absolute;
+    color: #FFF;
+    text-align: right;
+    min-width: 6rem;
+}
+ul.vertical li img {
+    max-width: 34px;
+    left: 6px;
+    margin: auto auto;
+    top: 6px;
+    position: absolute;
+}
+
+ul.vertical li img.spin-back , ul.vertical li img.spinner{
+    position: absolute;
+    left:-10%;right:0;top:-10%;
+    max-width: 120%;
+}
+ul.vertical li img.spinner {
+    animation: spinY 0.75s linear infinite;
+    transform-origin: center center;
+}
+@keyframes spinY {
+    0% {transform: rotateZ(0deg);}
+    100% {transform: rotateZ(359.9deg)}
+}
+.title-wrap h1 {
+    position:relative;
+    width:100%;
+    left:0;top:0;
+    font-size:80px;
+    padding-bottom:0.78em;
+}
+
+.title-wrap h1 span {
+    color:#FFF;
+    font-weight:bolder;
+    text-transform:uppercase;
+    text-align:center;
+    display:block;
+    transition:all 0.5s ease-in;
+}
+
+.darkblue-btn {
+    background:#02316C;
+    min-width:150px;
+    min-height:40px;
+    margin-top:20px;}
+
+
+.hide-below {margin-top:400px!important;opacity:0!important;}
+.hide-left {margin-left:-100vw; opacity:0;}
+.hide-right {margin-left:100vw;opacity:0;}
+.hide-flip {
+    transform:rotateY(-90deg);
+    transform-origin:center left;
+    position:absolute;
+}
+.show-flip {
+    animation: flipIn 0.35s ease-in forwards;
+    transform:rotateY(-90deg);
+    transform-origin:center left;
+}
+
+@keyframes flipIn {
+    0% {transform:rotateY(-90deg);}
+    100% {transform:rotateY(0deg);}
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #FFF;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #FFF;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #FFF;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #FFF;
+}
+
+@media(min-width:767px) {
+    .navbar-default {background-color:rgba(248, 248, 248, 0.16);}
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+
+.intro-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #222;
+}
+
+.about-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}
+
+.services-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #fff;
+}
+
+.contact-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}
